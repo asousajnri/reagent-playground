@@ -1,0 +1,7 @@
+node_modules/
+.cpcache
+.idea
+.DS_Store
+.shadow-cljs
+reagent-playground.iml
+public/js/
