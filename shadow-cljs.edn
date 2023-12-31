@@ -5,5 +5,4 @@
  :builds {:app {:target :browser
                 :output-dir "public/js"
                 :asset-path "."
-                :after-load {:after-load reagent-playground.core/after-load!}
-                :modules {:main {:init-fn reagent-playground.core/app!}}}}}
+                :modules {:main {:init-fn reagent-playground.core/app}}}}}

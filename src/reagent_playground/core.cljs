@@ -1,7 +1,21 @@
-(ns reagent-playground.core)
+(ns reagent-playground.core
+  (:require [reagent.core :as r]
+            [reagent.dom.client :as rdc]))
 
-(defn ^:after-load after-load! []
-  (js/console.log "After load!"))
+(defonce rootElem (rdc/create-root (js/document.getElementById "app")))
 
-(defn ^:export app! []
-  (js/console.log "App started!!"))
+;; DONE:
+;https://github.com/reagent-project/reagent/tree/master/examples/simple
+;https://reagent-project.github.io/
+;https://gitlab.com/clj-editors
+;https://www.bitsbyluke.com/2018/10/20/clojurescript-interop-with-javascript.html
+
+(defn ui []
+  [:div "Hello, world!"])
+
+(defn ^:dev/after-load ui-render []
+   (rdc/render rootElem [ui]))
+
+(defn ^:export app []
+  (ui-render))
+
