@@ -6,7 +6,7 @@
 
 ;; DONE:
 ;https://github.com/reagent-project/reagent/tree/master/examples/simple
-;https://reagent-project.github.io/
+;https://reagent-project.github.io/ >> stopped >> Complete demo
 ;https://gitlab.com/clj-editors
 ;https://www.bitsbyluke.com/2018/10/20/clojurescript-interop-with-javascript.html
 
